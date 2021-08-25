@@ -1,0 +1,135 @@
+/*
+Theme Name: Gogo!
+Author: Marek Świrydowicz
+Description: Gogo!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: <https://www.gnu.org/licenses/gpl-2.0.html>
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+$font: 'Rubik',
+sans-serif;
+$container: 1200px;
+$blue: #215398;
+$light: #F1F6FC;
+$bHeading: #FFFFFF;
+$lHeading: #2D3236;
+$pTHeading:49px;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+}
+
+.container {
+    max-width: $container;
+    margin: auto;
+}
+
+.logoImg {
+    padding: 23px 0;
+}
+
+.blueSection {
+    background: $blue;
+    color: $bHeading;
+    text-align: center;
+
+    &__heading {
+        font-size: 40px;
+        line-height: 52px;
+        padding-top: $pTHeading;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+
+.dot {
+    z-index: 3;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    margin: -16px auto -16px auto;
+    width: 32px;
+    height: 32px;
+    background: #FF3859;
+    box-shadow: 0px 4px 4px rgba(255, 56, 89, 0.2);
+}
+
+.lightSection {
+    background: $light;
+    color: $lHeading;
+    text-align: center;
+
+    &__heading {
+        font-size: 40px;
+        line-height: 52px;
+        padding-top: $pTHeading;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    &__secondHeading {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+.slider-wrap {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1060px;
+}
+
+.card-slider .card {
+    position: relative;
+    margin: 10px;
+    font-family: Quicksand !important;
+    background-color: #fdfdfd;
+    min-height: 440px;
+    box-shadow: 0px 6px 15px -13px rgba(0, 0, 0, 0.9);
+}
+
+.card-slider .card h3 {
+    padding: 10px 5px;
+    margin: 0 !important;
+    font-size: 26px !important;
+    color: #424242 !important;
+}
+
+.card-slider a.card {
+    text-decoration: none;
+}
+
+.card-slider i {
+    position: absolute;
+    font-size: 25px;
+    background: #629d45;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    padding-bottom: 2px;
+}
+
+.card-slider i:first-child {
+    left: -50px;
+    transform: translate(0, -50%);
+}
+
+.card-slider i:last-child {
+    right: -50px;
+    transform: translate(0, -50%);
+}
